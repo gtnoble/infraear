@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "AD8231")(type "KiCad")(uri "/home/gtnoble/Documents/Kicad/AD8231ACPZ-R7/2023-12-09_19-38-11.kicad_sym")(options "")(descr ""))
+  (lib (name "ADM7160ACPZN2")(type "KiCad")(uri "/home/gtnoble/Documents/Kicad/ADM7160ACPZN2-5-R7/2023-12-09_19-52-54.kicad_sym")(options "")(descr ""))
+  (lib (name "LTC6655")(type "KiCad")(uri "/home/gtnoble/Documents/Kicad/LTC6655CHMS8-3-PBF/2023-12-09_20-01-16.kicad_sym")(options "")(descr ""))
+  (lib (name "ADA4528")(type "KiCad")(uri "/home/gtnoble/Documents/Kicad/ADA4528-1ARMZ/2023-12-09_21-36-57.kicad_sym")(options "")(descr ""))
+)
