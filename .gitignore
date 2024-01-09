@@ -1,7 +1,6 @@
 *.log
 pcb/ultrasonic_microphone-backups
-pcb/gerbers
 *.raw
 *.plt
 *.fft
-pcb/gerbers
+*.zip
