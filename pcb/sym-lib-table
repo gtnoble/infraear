@@ -6,4 +6,6 @@
   (lib (name "ADA4528")(type "KiCad")(uri "/home/gtnoble/Documents/Kicad/ADA4528-1ARMZ/2023-12-09_21-36-57.kicad_sym")(options "")(descr ""))
   (lib (name "ADA4528-2")(type "KiCad")(uri "/home/gtnoble/Documents/Kicad/ADA4528-2/2023-12-10_16-18-50.kicad_sym")(options "")(descr ""))
   (lib (name "LTC6910-2")(type "KiCad")(uri "/home/gtnoble/Documents/Kicad/LTC6910-2/2023-12-10_16-16-49.kicad_sym")(options "")(descr ""))
+  (lib (name "AD7768")(type "KiCad")(uri "/home/gtnoble/Documents/Kicad/AD7768-1BCPZ/2023-12-15_15-32-32.kicad_sym")(options "")(descr ""))
+  (lib (name "ADXL359")(type "KiCad")(uri "/home/gtnoble/Documents/Kicad/ADXL359BCCZ/2023-12-16_01-47-04.kicad_sym")(options "")(descr ""))
 )

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/home/gtnoble/Documents/Projects/train_detect/ultrasonic_microphone/ultrasonic_microphone.kicad_sch</source>
-    <date>Mon 11 Dec 2023 06:38:46 PM CST</date>
+    <source>/home/gtnoble/Documents/Projects/train_detect/ultrasonic_microphone/pcb/ultrasonic_microphone.kicad_sch</source>
+    <date>Sun 07 Jan 2024 01:39:34 PM CST</date>
     <tool>Eeschema 7.0.9-7.0.9~ubuntu22.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -69,6 +69,28 @@
       <tstamps>121d49aa-5837-45f6-ad59-57c3db03b4fb</tstamps>
     </comp>
     <comp ref="C5">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>af29266d-bc6a-4fd0-9e16-3f4f852c9c49</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7e4c5b66-1dc6-49b8-a847-3f27520fc0e4</tstamps>
+    </comp>
+    <comp ref="C7">
       <value>47uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -79,60 +101,38 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>ee60892c-0568-41c7-86bb-de82d06e5db5</tstamps>
     </comp>
-    <comp ref="C6">
-      <value>330nF</value>
-      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
-      <property name="ki_description" value="Unpolarized capacitor"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>d8e2cfbf-5ae1-42d7-a9a5-cc3e4f3d20c1</tstamps>
-    </comp>
-    <comp ref="C7">
-      <value>330nF</value>
-      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
-      <property name="ki_description" value="Unpolarized capacitor"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>edd70d72-5d13-445b-9b67-50835ee4c00d</tstamps>
-    </comp>
     <comp ref="C8">
-      <value>330nF</value>
-      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>1d65af2f-cf7b-4171-86e2-2b8ac20a84eb</tstamps>
+      <tstamps>bbf0fef4-0f82-46e2-8cf0-98a2be55c626</tstamps>
     </comp>
     <comp ref="C9">
-      <value>330nF</value>
-      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>6896c7f7-1b0d-4e46-b72d-a233be00d2a1</tstamps>
+      <tstamps>3ff07d38-f207-45fa-9efd-cec6dbceb862</tstamps>
     </comp>
     <comp ref="C10">
-      <value>330nF</value>
-      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>67f908ea-7270-41c5-8a65-195c6c5b9dfa</tstamps>
+      <tstamps>062e6927-fbae-41bf-8e76-75a4600ec2bd</tstamps>
     </comp>
     <comp ref="C11">
       <value>330nF</value>
@@ -143,54 +143,54 @@
       <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>836021d7-31db-4ab1-8922-cab2792f7786</tstamps>
+      <tstamps>d8e2cfbf-5ae1-42d7-a9a5-cc3e4f3d20c1</tstamps>
     </comp>
     <comp ref="C12">
-      <value>4.7uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <value>330nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>47ad2aad-4e8c-4808-abc1-ae0f0663cb7b</tstamps>
+      <tstamps>edd70d72-5d13-445b-9b67-50835ee4c00d</tstamps>
     </comp>
     <comp ref="C13">
-      <value>4.7uF</value>
-      <footprint>Capacitor_THT:C_Rect_L7.2mm_W7.2mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <value>330nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>2944afd3-3323-4259-8d89-bdaa2bfd54b0</tstamps>
+      <tstamps>1d65af2f-cf7b-4171-86e2-2b8ac20a84eb</tstamps>
     </comp>
     <comp ref="C14">
-      <value>4.7uF</value>
-      <footprint>Capacitor_THT:C_Rect_L7.2mm_W7.2mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <value>330nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>3d9117a8-8d52-48bc-91f6-6e515f5b5df8</tstamps>
+      <tstamps>6896c7f7-1b0d-4e46-b72d-a233be00d2a1</tstamps>
     </comp>
     <comp ref="C15">
-      <value>10uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <value>330nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>e1ce43ab-1eb0-4d31-ad26-f6a91b73cf33</tstamps>
+      <tstamps>67f908ea-7270-41c5-8a65-195c6c5b9dfa</tstamps>
     </comp>
     <comp ref="C16">
-      <value>4.7uF</value>
+      <value>1uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Sheetname" value=""/>
@@ -198,9 +198,20 @@
       <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>ee7fa317-8dc0-49bd-8d74-b20f03eef632</tstamps>
+      <tstamps>f6a7598c-2b22-4d89-b692-ccdfe9818aed</tstamps>
     </comp>
     <comp ref="C17">
+      <value>330nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>836021d7-31db-4ab1-8922-cab2792f7786</tstamps>
+    </comp>
+    <comp ref="C18">
       <value>0.1uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -209,10 +220,10 @@
       <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>20afbffc-40ac-41d6-980b-afaa419e19d7</tstamps>
+      <tstamps>48e04fd7-aa59-42c8-aa2a-75a4db5bcdd5</tstamps>
     </comp>
-    <comp ref="C18">
-      <value>47uf</value>
+    <comp ref="C19">
+      <value>0.1uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Sheetname" value=""/>
@@ -220,7 +231,117 @@
       <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>5a722f50-0a6e-4ef8-bfaf-7ff59b59083f</tstamps>
+      <tstamps>336a038c-260e-4501-b999-b8d9de921cce</tstamps>
+    </comp>
+    <comp ref="C20">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b2b64f77-c121-4976-847d-35a16adee5b7</tstamps>
+    </comp>
+    <comp ref="C21">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2534fc52-7a0a-43d7-b758-bfafad8bb6ad</tstamps>
+    </comp>
+    <comp ref="C22">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>afe75bf6-1103-41b1-8518-7d8318fc5486</tstamps>
+    </comp>
+    <comp ref="C23">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5c79c869-8fd1-43b2-9fad-1615231b9ce7</tstamps>
+    </comp>
+    <comp ref="C24">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>546766f6-e65a-46f0-96ec-dd7896af5bb2</tstamps>
+    </comp>
+    <comp ref="C25">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>29852c8b-b440-4555-ba62-e60121405c0c</tstamps>
+    </comp>
+    <comp ref="C26">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7595290f-edbe-4d03-89cd-29b7c598ee1c</tstamps>
+    </comp>
+    <comp ref="C27">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e2a40a5d-b4a1-4eaf-9d87-4e206f036d90</tstamps>
+    </comp>
+    <comp ref="C28">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d58a9c58-c98b-4f71-bcd9-16ef35c68edb</tstamps>
+    </comp>
+    <comp ref="C29">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f035dc13-cd6c-4044-9d58-c8cb466e2dbd</tstamps>
     </comp>
     <comp ref="J1">
       <value>Conn_01x19</value>
@@ -245,9 +366,9 @@
       <tstamps>f05778d5-7d2c-49c2-9169-73071eb1e16d</tstamps>
     </comp>
     <comp ref="J3">
-      <value>Electret Microphone</value>
+      <value>Conn_01x02</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal</footprint>
-      <libsource lib="" part="Conn_01x02_1" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
       <property name="ki_description" value="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -310,27 +431,280 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>8b0e43c4-d6a9-4d9b-a628-7642b27109dd</tstamps>
     </comp>
-    <comp ref="R6">
-      <value>10</value>
-      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
-      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+    <comp ref="TP1">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
-      <property name="ki_description" value="Resistor, US symbol"/>
-      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>44820b10-054d-44f8-a521-907fc09d6041</tstamps>
+      <tstamps>afb09762-f695-4a73-8ac7-812117d134e9</tstamps>
     </comp>
-    <comp ref="R7">
-      <value>10</value>
-      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
-      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+    <comp ref="TP2">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
-      <property name="ki_description" value="Resistor, US symbol"/>
-      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>f424898d-5d04-40f7-82c7-8f450d6811ed</tstamps>
+      <tstamps>1dd5ca9f-14b8-4205-9e47-7e2e23be433c</tstamps>
+    </comp>
+    <comp ref="TP3">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>046a30f7-4a54-4b1a-85f7-2f2206b88c5a</tstamps>
+    </comp>
+    <comp ref="TP4">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a51e426d-3af1-4a6d-a7b7-f0e6b9a3817e</tstamps>
+    </comp>
+    <comp ref="TP5">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fcd6b1f1-dc15-4c0f-bfa7-54618b1e891c</tstamps>
+    </comp>
+    <comp ref="TP6">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08aa68d2-cf87-4887-9d89-11db0b5ef148</tstamps>
+    </comp>
+    <comp ref="TP7">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c1c8122e-fe1e-4840-8be8-7e4db0543941</tstamps>
+    </comp>
+    <comp ref="TP8">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f234d2b8-51c6-46b2-8e0b-dfde3f3389a3</tstamps>
+    </comp>
+    <comp ref="TP9">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>11c7878a-a60a-4238-a51f-a5fc55b3cbc2</tstamps>
+    </comp>
+    <comp ref="TP10">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>93e9c7cd-cde5-4237-bf18-8138352db422</tstamps>
+    </comp>
+    <comp ref="TP11">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7493cebe-e16e-425b-9059-311ccc2c2a87</tstamps>
+    </comp>
+    <comp ref="TP12">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ffbbc204-22ad-4441-b91a-e744c4828fae</tstamps>
+    </comp>
+    <comp ref="TP13">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b8e0b8fb-1f4f-41c7-84d6-e6840dc507e6</tstamps>
+    </comp>
+    <comp ref="TP14">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ad377f18-65e9-4ea3-840b-6a586b0e7398</tstamps>
+    </comp>
+    <comp ref="TP15">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>74e770c5-f76d-45de-af65-3d6e7f7721f6</tstamps>
+    </comp>
+    <comp ref="TP16">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>632ba0f3-281c-44c7-b49e-cbd5074908ad</tstamps>
+    </comp>
+    <comp ref="TP17">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8e665a24-d14f-4c61-9729-12b7e3bfb976</tstamps>
+    </comp>
+    <comp ref="TP18">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7a826650-f99d-4684-94d2-a372d18be05d</tstamps>
+    </comp>
+    <comp ref="TP19">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d1de71eb-c251-4dc6-a4b5-2c5c2208f420</tstamps>
+    </comp>
+    <comp ref="TP20">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2b0c42c4-c1d1-4a97-b41c-f285fcf68799</tstamps>
+    </comp>
+    <comp ref="TP21">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>259321ec-5d1c-4388-9eff-d7093c7d9602</tstamps>
+    </comp>
+    <comp ref="TP22">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c1e64e7b-08c1-4037-9017-80d1526fd60a</tstamps>
+    </comp>
+    <comp ref="TP23">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>28527ba4-9058-4ee9-ab95-cfc2d3dd2f89</tstamps>
+    </comp>
+    <comp ref="TP24">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8b8a0666-486b-4809-ae43-28b07a05ff14</tstamps>
+    </comp>
+    <comp ref="TP25">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7a47f639-6d1d-406c-97a3-fe6f6d02a035</tstamps>
     </comp>
     <comp ref="U1">
       <value>LTC6910-2CTS8-TRMPBF</value>
@@ -366,46 +740,29 @@
       <tstamps>0da053f5-0037-4352-8836-770a375bb067</tstamps>
     </comp>
     <comp ref="U4">
-      <value>ADM7160ACPZN2.5-R7</value>
-      <footprint>ADM7160ACPZN2-5-R7:CP_6_3_ADI</footprint>
-      <datasheet>ADM7160ACPZN2.5-R7</datasheet>
-      <libsource lib="ADM7160ACPZN2" part="ADM7160ACPZN2.5-R7" description=""/>
+      <value>AD7768-1BCPZ</value>
+      <footprint>AD7768:CP_28_12</footprint>
+      <datasheet>AD7768-1BCPZ</datasheet>
+      <libsource lib="AD7768" part="AD7768-1BCPZ" description=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
-      <property name="ki_keywords" value="ADM7160ACPZN2.5-R7"/>
+      <property name="ki_keywords" value="AD7768-1BCPZ"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>daec3023-abf0-410e-b131-c1e3b9fdd7bd</tstamps>
+      <tstamps>d54466ef-98bd-4c43-a5f7-6a371a6394b9</tstamps>
     </comp>
     <comp ref="U5">
-      <value>LTC2508CDKD-32</value>
-      <footprint>Package_DFN_QFN:DFN-24-1EP_4x7mm_P0.5mm_EP2.64x6.44mm</footprint>
-      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/250832fc.pdf</datasheet>
-      <libsource lib="Analog_ADC" part="LTC2508CDKD-32" description="32-Bit Oversampling ADC with Configurable Digital Filter, 0°C to 70°C, DFN-24 package"/>
+      <value>ADXL359BCCZ</value>
+      <footprint>ADXL359:LGA14_CC-14-2_ADI</footprint>
+      <datasheet>ADXL359BCCZ</datasheet>
+      <libsource lib="ADXL359" part="ADXL359BCCZ" description=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ultrasonic_microphone.kicad_sch"/>
-      <property name="ki_description" value="32-Bit Oversampling ADC with Configurable Digital Filter, 0°C to 70°C, DFN-24 package"/>
-      <property name="ki_keywords" value="LT ADC 32bit"/>
+      <property name="ki_keywords" value="ADXL359BCCZ"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>7b3a333c-ad60-4bd2-81d0-02662e7ea1a2</tstamps>
+      <tstamps>ba7132dc-c208-4ffe-9028-dfba47afd1f3</tstamps>
     </comp>
   </components>
   <libparts>
-    <libpart lib="" part="Conn_01x02_1">
-      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Connector*:*_1x??_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J1</field>
-        <field name="Value">Electret Microphone</field>
-        <field name="Datasheet">~</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Output" type="passive"/>
-        <pin num="2" name="GND" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="" part="Conn_01x19_1">
       <description>Generic connector, single row, 01x19, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
@@ -439,6 +796,51 @@
         <pin num="19" name="5V" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="AD7768" part="AD7768-1BCPZ">
+      <docs>AD7768-1BCPZ</docs>
+      <footprints>
+        <fp>CP_28_12</fp>
+        <fp>CP_28_12-M</fp>
+        <fp>CP_28_12-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AD7768-1BCPZ</field>
+        <field name="Footprint">CP_28_12</field>
+        <field name="Datasheet">AD7768-1BCPZ</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RESET*" type="unspecified"/>
+        <pin num="2" name="SYNC_IN*" type="unspecified"/>
+        <pin num="3" name="SYNC_OUT*" type="unspecified"/>
+        <pin num="4" name="REGCAPD" type="unspecified"/>
+        <pin num="5" name="IOVDD" type="unspecified"/>
+        <pin num="6" name="PIN*/SPI" type="unspecified"/>
+        <pin num="7" name="DGND" type="unspecified"/>
+        <pin num="8" name="CLKSEL" type="unspecified"/>
+        <pin num="9" name="DOUT/RDY*" type="unspecified"/>
+        <pin num="10" name="SCLK" type="unspecified"/>
+        <pin num="11" name="SDI" type="unspecified"/>
+        <pin num="12" name="CS*" type="unspecified"/>
+        <pin num="13" name="XTAL1" type="unspecified"/>
+        <pin num="14" name="MCLK/XTAL2" type="unspecified"/>
+        <pin num="15" name="MODE0/GPIO0" type="unspecified"/>
+        <pin num="16" name="MODE1/GPIO1" type="unspecified"/>
+        <pin num="17" name="MODE2/GPIO2" type="unspecified"/>
+        <pin num="18" name="MODE3/GPIO3(START*)" type="unspecified"/>
+        <pin num="19" name="DRDY*" type="unspecified"/>
+        <pin num="20" name="REGCAPA" type="unspecified"/>
+        <pin num="21" name="AVSS" type="unspecified"/>
+        <pin num="22" name="AVDD2" type="unspecified"/>
+        <pin num="23" name="AVDD1" type="unspecified"/>
+        <pin num="24" name="REF+" type="unspecified"/>
+        <pin num="25" name="REF-" type="unspecified"/>
+        <pin num="26" name="AIN-" type="unspecified"/>
+        <pin num="27" name="AIN+" type="unspecified"/>
+        <pin num="28" name="VCM" type="unspecified"/>
+        <pin num="29" name="EP(GND)" type="unspecified"/>
+      </pins>
+    </libpart>
     <libpart lib="ADA4528-2" part="ADA4528-2ARMZ">
       <docs>ADA4528-2ARMZ</docs>
       <footprints>
@@ -463,67 +865,66 @@
         <pin num="8" name="V+" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="ADM7160ACPZN2" part="ADM7160ACPZN2.5-R7">
-      <docs>ADM7160ACPZN2.5-R7</docs>
+    <libpart lib="ADXL359" part="ADXL359BCCZ">
+      <docs>ADXL359BCCZ</docs>
       <footprints>
-        <fp>CP_6_3_ADI</fp>
-        <fp>CP_6_3_ADI-M</fp>
-        <fp>CP_6_3_ADI-L</fp>
+        <fp>LGA14_CC-14-2_ADI</fp>
+        <fp>LGA14_CC-14-2_ADI-M</fp>
+        <fp>LGA14_CC-14-2_ADI-L</fp>
       </footprints>
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">ADM7160ACPZN2.5-R7</field>
-        <field name="Footprint">CP_6_3_ADI</field>
-        <field name="Datasheet">ADM7160ACPZN2.5-R7</field>
+        <field name="Value">ADXL359BCCZ</field>
+        <field name="Footprint">LGA14_CC-14-2_ADI</field>
+        <field name="Datasheet">ADXL359BCCZ</field>
       </fields>
       <pins>
-        <pin num="1" name="VOUT" type="output"/>
-        <pin num="2" name="NC" type="no_connect"/>
-        <pin num="3" name="GND" type="power_out"/>
-        <pin num="4" name="EN" type="unspecified"/>
-        <pin num="5" name="NC" type="no_connect"/>
-        <pin num="6" name="VIN" type="unspecified"/>
-        <pin num="7" name="EPAD" type="unspecified"/>
+        <pin num="1" name="*CS/SCL" type="unspecified"/>
+        <pin num="2" name="SCLK/VSSIO" type="unspecified"/>
+        <pin num="3" name="MOSI/SDA" type="output"/>
+        <pin num="4" name="MISO/ASEL" type="input"/>
+        <pin num="5" name="VDDIO" type="power_in"/>
+        <pin num="6" name="VSSIO" type="power_out"/>
+        <pin num="7" name="RESERVED" type="unspecified"/>
+        <pin num="8" name="V1P8DIG" type="power_in"/>
+        <pin num="9" name="VSS" type="power_out"/>
+        <pin num="10" name="V1P8ANA" type="power_in"/>
+        <pin num="11" name="VSUPPLY" type="power_in"/>
+        <pin num="12" name="INT1" type="unspecified"/>
+        <pin num="13" name="INT2" type="unspecified"/>
+        <pin num="14" name="DRDY" type="unspecified"/>
       </pins>
     </libpart>
-    <libpart lib="Analog_ADC" part="LTC2508CDKD-32">
-      <description>32-Bit Oversampling ADC with Configurable Digital Filter, 0°C to 70°C, DFN-24 package</description>
-      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/250832fc.pdf</docs>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
       <footprints>
-        <fp>DFN*1EP*4x7mm*P0.5mm*</fp>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
       </footprints>
       <fields>
-        <field name="Reference">U</field>
-        <field name="Value">LTC2508CDKD-32</field>
-        <field name="Footprint">Package_DFN_QFN:DFN-24-1EP_4x7mm_P0.5mm_EP2.64x6.44mm</field>
-        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/250832fc.pdf</field>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Datasheet">~</field>
       </fields>
       <pins>
-        <pin num="1" name="RDLA" type="input"/>
-        <pin num="2" name="RDLB" type="input"/>
-        <pin num="3" name="VDD" type="power_in"/>
-        <pin num="4" name="GND" type="power_in"/>
-        <pin num="5" name="IN+" type="input"/>
-        <pin num="6" name="IN-" type="input"/>
-        <pin num="7" name="GND" type="power_in"/>
-        <pin num="8" name="REF" type="passive"/>
-        <pin num="9" name="REF" type="passive"/>
-        <pin num="10" name="REF" type="passive"/>
-        <pin num="11" name="SEL0" type="input"/>
-        <pin num="12" name="SEL1" type="input"/>
-        <pin num="13" name="MCLK" type="input"/>
-        <pin num="14" name="SYNC" type="input"/>
-        <pin num="15" name="DRL" type="output"/>
-        <pin num="16" name="GND" type="power_in"/>
-        <pin num="17" name="SDOA" type="tri_state"/>
-        <pin num="18" name="SCKA" type="input"/>
-        <pin num="19" name="SCKB" type="input"/>
-        <pin num="20" name="SDOB" type="tri_state"/>
-        <pin num="21" name="BUSY" type="output"/>
-        <pin num="22" name="OVDD" type="power_in"/>
-        <pin num="23" name="GND" type="power_in"/>
-        <pin num="24" name="GND" type="power_in"/>
-        <pin num="25" name="EPAD" type="power_in"/>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Connector_Generic" part="Conn_01x19">
@@ -641,14 +1042,17 @@
     </libpart>
   </libparts>
   <libraries>
+    <library logical="AD7768">
+      <uri>/home/gtnoble/Documents/Kicad/AD7768-1BCPZ/2023-12-15_15-32-32.kicad_sym</uri>
+    </library>
     <library logical="ADA4528-2">
       <uri>/home/gtnoble/Documents/Kicad/ADA4528-2/2023-12-10_16-18-50.kicad_sym</uri>
     </library>
-    <library logical="ADM7160ACPZN2">
-      <uri>/home/gtnoble/Documents/Kicad/ADM7160ACPZN2-5-R7/2023-12-09_19-52-54.kicad_sym</uri>
+    <library logical="ADXL359">
+      <uri>/home/gtnoble/Documents/Kicad/ADXL359BCCZ/2023-12-16_01-47-04.kicad_sym</uri>
     </library>
-    <library logical="Analog_ADC">
-      <uri>/usr/share/kicad/symbols//Analog_ADC.kicad_sym</uri>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
     </library>
     <library logical="Connector_Generic">
       <uri>/usr/share/kicad/symbols//Connector_Generic.kicad_sym</uri>
@@ -664,72 +1068,108 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="+2V5">
-      <node ref="C12" pin="1" pintype="passive"/>
-      <node ref="C15" pin="1" pintype="passive"/>
-      <node ref="J2" pin="13" pinfunction="P4" pintype="passive"/>
-      <node ref="U4" pin="1" pinfunction="VOUT" pintype="output"/>
-      <node ref="U5" pin="3" pinfunction="VDD" pintype="power_in"/>
-    </net>
-    <net code="2" name="+3.3V">
-      <node ref="C17" pin="1" pintype="passive"/>
+    <net code="1" name="+3.3V">
+      <node ref="C19" pin="1" pintype="passive"/>
       <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C22" pin="1" pintype="passive"/>
+      <node ref="C26" pin="1" pintype="passive"/>
+      <node ref="C28" pin="1" pintype="passive"/>
       <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
       <node ref="J1" pin="1" pinfunction="3.3V" pintype="passive"/>
       <node ref="U1" pin="8" pinfunction="V+" pintype="power_in"/>
       <node ref="U2" pin="8" pinfunction="V+" pintype="power_in"/>
-      <node ref="U5" pin="2" pinfunction="RDLB" pintype="input"/>
-      <node ref="U5" pin="22" pinfunction="OVDD" pintype="power_in"/>
+      <node ref="U4" pin="1" pinfunction="RESET*" pintype="unspecified"/>
+      <node ref="U4" pin="22" pinfunction="AVDD2" pintype="unspecified"/>
+      <node ref="U4" pin="5" pinfunction="IOVDD" pintype="unspecified"/>
+      <node ref="U4" pin="6" pinfunction="PIN*/SPI" pintype="unspecified"/>
+      <node ref="U5" pin="11" pinfunction="VSUPPLY" pintype="power_in"/>
+      <node ref="U5" pin="5" pinfunction="VDDIO" pintype="power_in"/>
     </net>
-    <net code="3" name="+5V">
+    <net code="2" name="+5V">
       <node ref="C1" pin="1" pintype="passive"/>
-      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="C23" pin="2" pintype="passive"/>
       <node ref="J1" pin="19" pinfunction="5V" pintype="passive"/>
       <node ref="U3" pin="1" pinfunction="*SHDN" pintype="input"/>
       <node ref="U3" pin="2" pinfunction="VIN" pintype="input"/>
-      <node ref="U4" pin="4" pinfunction="EN" pintype="unspecified"/>
-      <node ref="U4" pin="6" pinfunction="VIN" pintype="unspecified"/>
+      <node ref="U4" pin="23" pinfunction="AVDD1" pintype="unspecified"/>
     </net>
-    <net code="4" name="AMP_OUT">
+    <net code="3" name="ACCEL_CS*">
+      <node ref="J1" pin="7" pinfunction="P32" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="*CS/SCL" pintype="unspecified"/>
+    </net>
+    <net code="4" name="ACCEL_DRDY">
+      <node ref="J1" pin="6" pinfunction="P35" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="14" pinfunction="DRDY" pintype="unspecified"/>
+    </net>
+    <net code="5" name="ADC_CS*">
+      <node ref="J2" pin="10" pinfunction="P5" pintype="passive"/>
+      <node ref="TP19" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="12" pinfunction="CS*" pintype="unspecified"/>
+    </net>
+    <net code="6" name="ADC_DRDY*">
+      <node ref="J1" pin="5" pinfunction="P34" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="19" pinfunction="DRDY*" pintype="unspecified"/>
+    </net>
+    <net code="7" name="ADC_SYNC">
+      <node ref="J1" pin="8" pinfunction="P33" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="2" pinfunction="SYNC_IN*" pintype="unspecified"/>
+    </net>
+    <net code="8" name="AMP_OUT">
       <node ref="J1" pin="10" pinfunction="P26" pintype="passive"/>
-      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="TP13" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="1" pinfunction="OUT" pintype="output"/>
+      <node ref="U4" pin="27" pinfunction="AIN+" pintype="unspecified"/>
     </net>
-    <net code="5" name="BUSY">
-      <node ref="J1" pin="3" pinfunction="SVP" pintype="passive"/>
-      <node ref="U5" pin="21" pinfunction="BUSY" pintype="output"/>
-    </net>
-    <net code="6" name="DRL">
-      <node ref="J1" pin="4" pinfunction="SVN" pintype="passive"/>
-      <node ref="U5" pin="15" pinfunction="DRL" pintype="output"/>
-    </net>
-    <net code="7" name="G0">
+    <net code="9" name="G0">
       <node ref="J1" pin="15" pinfunction="P13" pintype="passive"/>
+      <node ref="TP9" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="5" pinfunction="G0" pintype="input"/>
     </net>
-    <net code="8" name="G1">
+    <net code="10" name="G1">
       <node ref="J1" pin="13" pinfunction="P12" pintype="passive"/>
+      <node ref="TP8" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="6" pinfunction="G1" pintype="input"/>
     </net>
-    <net code="9" name="G2">
-      <node ref="J1" pin="12" pinfunction="P14" pintype="passive"/>
+    <net code="11" name="G2">
+      <node ref="J2" pin="15" pinfunction="P2" pintype="passive"/>
+      <node ref="TP15" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="7" pinfunction="G2" pintype="input"/>
     </net>
-    <net code="10" name="GND">
+    <net code="12" name="GND">
       <node ref="C1" pin="2" pintype="passive"/>
-      <node ref="C11" pin="2" pintype="passive"/>
-      <node ref="C12" pin="2" pintype="passive"/>
-      <node ref="C13" pin="1" pintype="passive"/>
-      <node ref="C14" pin="1" pintype="passive"/>
-      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
       <node ref="C16" pin="2" pintype="passive"/>
       <node ref="C17" pin="2" pintype="passive"/>
       <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
       <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="C24" pin="2" pintype="passive"/>
+      <node ref="C25" pin="2" pintype="passive"/>
+      <node ref="C26" pin="2" pintype="passive"/>
+      <node ref="C27" pin="2" pintype="passive"/>
+      <node ref="C28" pin="2" pintype="passive"/>
+      <node ref="C29" pin="2" pintype="passive"/>
       <node ref="C3" pin="2" pintype="passive"/>
       <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
       <node ref="J2" pin="7" pinfunction="GND" pintype="passive"/>
-      <node ref="J3" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="R2" pin="2" pintype="passive"/>
       <node ref="U1" pin="4" pinfunction="V-" pintype="power_in"/>
       <node ref="U2" pin="4" pinfunction="V-" pintype="power_in"/>
@@ -737,176 +1177,202 @@
       <node ref="U3" pin="4" pinfunction="GND" pintype="power_in"/>
       <node ref="U3" pin="5" pinfunction="GND" pintype="power_in"/>
       <node ref="U3" pin="8" pinfunction="GND" pintype="power_in"/>
-      <node ref="U4" pin="3" pinfunction="GND" pintype="power_out"/>
-      <node ref="U4" pin="7" pinfunction="EPAD" pintype="unspecified"/>
-      <node ref="U5" pin="1" pinfunction="RDLA" pintype="input"/>
-      <node ref="U5" pin="16" pinfunction="GND" pintype="power_in"/>
-      <node ref="U5" pin="23" pinfunction="GND" pintype="power_in"/>
-      <node ref="U5" pin="24" pinfunction="GND" pintype="power_in"/>
-      <node ref="U5" pin="25" pinfunction="EPAD" pintype="power_in"/>
-      <node ref="U5" pin="4" pinfunction="GND" pintype="power_in"/>
-      <node ref="U5" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U4" pin="13" pinfunction="XTAL1" pintype="unspecified"/>
+      <node ref="U4" pin="21" pinfunction="AVSS" pintype="unspecified"/>
+      <node ref="U4" pin="25" pinfunction="REF-" pintype="unspecified"/>
+      <node ref="U4" pin="29" pinfunction="EP(GND)" pintype="unspecified"/>
+      <node ref="U4" pin="7" pinfunction="DGND" pintype="unspecified"/>
+      <node ref="U4" pin="8" pinfunction="CLKSEL" pintype="unspecified"/>
+      <node ref="U5" pin="6" pinfunction="VSSIO" pintype="power_out"/>
+      <node ref="U5" pin="7" pinfunction="RESERVED" pintype="unspecified"/>
+      <node ref="U5" pin="9" pinfunction="VSS" pintype="power_out"/>
     </net>
-    <net code="11" name="MCLK">
+    <net code="13" name="INT1">
+      <node ref="J2" pin="6" pinfunction="P21" pintype="passive"/>
+      <node ref="TP11" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="12" pinfunction="INT1" pintype="unspecified"/>
+    </net>
+    <net code="14" name="MCLK">
       <node ref="J2" pin="14" pinfunction="P0" pintype="passive"/>
-      <node ref="U5" pin="13" pinfunction="MCLK" pintype="input"/>
+      <node ref="TP7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="14" pinfunction="MCLK/XTAL2" pintype="unspecified"/>
+      <node ref="U5" pin="13" pinfunction="INT2" pintype="unspecified"/>
     </net>
-    <net code="12" name="Net-(C10-Pad1)">
-      <node ref="C10" pin="1" pintype="passive"/>
-      <node ref="C6" pin="1" pintype="passive"/>
-      <node ref="C7" pin="1" pintype="passive"/>
-      <node ref="C8" pin="1" pintype="passive"/>
-      <node ref="C9" pin="1" pintype="passive"/>
-      <node ref="R4" pin="2" pintype="passive"/>
+    <net code="15" name="MISO_SPI">
+      <node ref="J2" pin="8" pinfunction="P19" pintype="passive"/>
+      <node ref="TP14" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="9" pinfunction="DOUT/RDY*" pintype="unspecified"/>
+      <node ref="U5" pin="4" pinfunction="MISO/ASEL" pintype="input"/>
     </net>
-    <net code="13" name="Net-(J3-Output)">
-      <node ref="C10" pin="2" pintype="passive"/>
+    <net code="16" name="MOSI_SPI">
+      <node ref="J2" pin="2" pinfunction="P23" pintype="passive"/>
+      <node ref="TP20" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="11" pinfunction="SDI" pintype="unspecified"/>
+      <node ref="U5" pin="3" pinfunction="MOSI/SDA" pintype="output"/>
+    </net>
+    <net code="17" name="Net-(C11-Pad1)">
       <node ref="C11" pin="1" pintype="passive"/>
-      <node ref="C6" pin="2" pintype="passive"/>
-      <node ref="C7" pin="2" pintype="passive"/>
-      <node ref="C8" pin="2" pintype="passive"/>
-      <node ref="C9" pin="2" pintype="passive"/>
-      <node ref="J3" pin="1" pinfunction="Output" pintype="passive"/>
-      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="TP17" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="14" name="Net-(U1-IN)">
+    <net code="18" name="Net-(J3-Pin_1)">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="TP22" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(U1-IN)">
       <node ref="C4" pin="1" pintype="passive"/>
       <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="3" pinfunction="IN" pintype="input"/>
       <node ref="U2" pin="7" pinfunction="OUTB" pintype="output"/>
     </net>
-    <net code="15" name="Net-(U2-INA+)">
+    <net code="20" name="Net-(U2-INA+)">
       <node ref="R1" pin="2" pintype="passive"/>
       <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U2" pin="3" pinfunction="INA+" pintype="input"/>
     </net>
-    <net code="16" name="Net-(U2-INB-)">
+    <net code="21" name="Net-(U2-INB-)">
       <node ref="C4" pin="2" pintype="passive"/>
       <node ref="R3" pin="1" pintype="passive"/>
       <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="TP16" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U2" pin="6" pinfunction="INB-" pintype="input"/>
     </net>
-    <net code="17" name="Net-(U5-IN+)">
-      <node ref="C13" pin="2" pintype="passive"/>
-      <node ref="R6" pin="2" pintype="passive"/>
-      <node ref="U5" pin="5" pinfunction="IN+" pintype="input"/>
+    <net code="22" name="Net-(U4-REGCAPA)">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="TP21" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="20" pinfunction="REGCAPA" pintype="unspecified"/>
     </net>
-    <net code="18" name="Net-(U5-IN-)">
-      <node ref="C14" pin="2" pintype="passive"/>
-      <node ref="R7" pin="2" pintype="passive"/>
-      <node ref="U5" pin="6" pinfunction="IN-" pintype="input"/>
-    </net>
-    <net code="19" name="REF">
+    <net code="23" name="Net-(U4-REGCAPD)">
       <node ref="C18" pin="1" pintype="passive"/>
-      <node ref="C5" pin="1" pintype="passive"/>
-      <node ref="J1" pin="8" pinfunction="P33" pintype="passive"/>
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="TP23" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="4" pinfunction="REGCAPD" pintype="unspecified"/>
+    </net>
+    <net code="24" name="Net-(U5-V1P8ANA)">
+      <node ref="C27" pin="1" pintype="passive"/>
+      <node ref="C29" pin="1" pintype="passive"/>
+      <node ref="TP25" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="10" pinfunction="V1P8ANA" pintype="power_in"/>
+    </net>
+    <net code="25" name="Net-(U5-V1P8DIG)">
+      <node ref="C24" pin="1" pintype="passive"/>
+      <node ref="C25" pin="1" pintype="passive"/>
+      <node ref="TP24" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="8" pinfunction="V1P8DIG" pintype="power_in"/>
+    </net>
+    <net code="26" name="REF">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="J1" pin="12" pinfunction="P14" pintype="passive"/>
       <node ref="R1" pin="1" pintype="passive"/>
       <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="TP10" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U3" pin="6" pinfunction="VOUT_S" pintype="output"/>
       <node ref="U3" pin="7" pinfunction="VOUT_F" pintype="output"/>
-      <node ref="U5" pin="10" pinfunction="REF" pintype="passive"/>
-      <node ref="U5" pin="8" pinfunction="REF" pintype="passive"/>
-      <node ref="U5" pin="9" pinfunction="REF" pintype="passive"/>
+      <node ref="U4" pin="24" pinfunction="REF+" pintype="unspecified"/>
     </net>
-    <net code="20" name="SCKA">
+    <net code="27" name="SCLK_SPI">
       <node ref="J2" pin="9" pinfunction="P18" pintype="passive"/>
-      <node ref="U5" pin="18" pinfunction="SCKA" pintype="input"/>
+      <node ref="TP18" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="10" pinfunction="SCLK" pintype="unspecified"/>
+      <node ref="U5" pin="2" pinfunction="SCLK/VSSIO" pintype="unspecified"/>
     </net>
-    <net code="21" name="SDOA">
-      <node ref="J2" pin="8" pinfunction="P19" pintype="passive"/>
-      <node ref="U5" pin="17" pinfunction="SDOA" pintype="tri_state"/>
-    </net>
-    <net code="22" name="SEL0">
-      <node ref="J1" pin="7" pinfunction="P32" pintype="passive"/>
-      <node ref="U5" pin="11" pinfunction="SEL0" pintype="input"/>
-    </net>
-    <net code="23" name="SEL1">
-      <node ref="J1" pin="6" pinfunction="P35" pintype="passive"/>
-      <node ref="U5" pin="12" pinfunction="SEL1" pintype="input"/>
-    </net>
-    <net code="24" name="SYNC">
-      <node ref="J1" pin="5" pinfunction="P34" pintype="passive"/>
-      <node ref="U5" pin="14" pinfunction="SYNC" pintype="input"/>
-    </net>
-    <net code="25" name="VGND">
+    <net code="28" name="VGND">
       <node ref="J1" pin="11" pinfunction="P27" pintype="passive"/>
-      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="TP12" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="2" pinfunction="AGND" pintype="power_in"/>
       <node ref="U2" pin="1" pinfunction="OUTA" pintype="output"/>
       <node ref="U2" pin="2" pinfunction="INA-" pintype="input"/>
       <node ref="U2" pin="5" pinfunction="INB+" pintype="input"/>
+      <node ref="U4" pin="26" pinfunction="AIN-" pintype="unspecified"/>
     </net>
-    <net code="26" name="unconnected-(J1-CMD-Pad18)">
+    <net code="29" name="unconnected-(J1-CMD-Pad18)">
       <node ref="J1" pin="18" pinfunction="CMD" pintype="passive+no_connect"/>
     </net>
-    <net code="27" name="unconnected-(J1-EN-Pad2)">
+    <net code="30" name="unconnected-(J1-EN-Pad2)">
       <node ref="J1" pin="2" pinfunction="EN" pintype="passive+no_connect"/>
     </net>
-    <net code="28" name="unconnected-(J1-GND-Pad14)">
+    <net code="31" name="unconnected-(J1-GND-Pad14)">
       <node ref="J1" pin="14" pinfunction="GND" pintype="passive+no_connect"/>
     </net>
-    <net code="29" name="unconnected-(J1-P25-Pad9)">
+    <net code="32" name="unconnected-(J1-P25-Pad9)">
       <node ref="J1" pin="9" pinfunction="P25" pintype="passive+no_connect"/>
     </net>
-    <net code="30" name="unconnected-(J1-SD2-Pad16)">
+    <net code="33" name="unconnected-(J1-SD2-Pad16)">
       <node ref="J1" pin="16" pinfunction="SD2" pintype="passive+no_connect"/>
     </net>
-    <net code="31" name="unconnected-(J1-SD3-Pad17)">
+    <net code="34" name="unconnected-(J1-SD3-Pad17)">
       <node ref="J1" pin="17" pinfunction="SD3" pintype="passive+no_connect"/>
     </net>
-    <net code="32" name="unconnected-(J2-CLK-Pad19)">
+    <net code="35" name="unconnected-(J1-SVN-Pad4)">
+      <node ref="J1" pin="4" pinfunction="SVN" pintype="passive+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(J1-SVP-Pad3)">
+      <node ref="J1" pin="3" pinfunction="SVP" pintype="passive+no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(J2-CLK-Pad19)">
       <node ref="J2" pin="19" pinfunction="CLK" pintype="passive+no_connect"/>
     </net>
-    <net code="33" name="unconnected-(J2-GND-Pad1)">
+    <net code="38" name="unconnected-(J2-GND-Pad1)">
       <node ref="J2" pin="1" pinfunction="GND" pintype="passive+no_connect"/>
     </net>
-    <net code="34" name="unconnected-(J2-P2-Pad15)">
-      <node ref="J2" pin="15" pinfunction="P2" pintype="passive+no_connect"/>
+    <net code="39" name="unconnected-(J2-P4-Pad13)">
+      <node ref="J2" pin="13" pinfunction="P4" pintype="passive+no_connect"/>
     </net>
-    <net code="35" name="unconnected-(J2-P5-Pad10)">
-      <node ref="J2" pin="10" pinfunction="P5" pintype="passive+no_connect"/>
-    </net>
-    <net code="36" name="unconnected-(J2-P15-Pad16)">
+    <net code="40" name="unconnected-(J2-P15-Pad16)">
       <node ref="J2" pin="16" pinfunction="P15" pintype="passive+no_connect"/>
     </net>
-    <net code="37" name="unconnected-(J2-P16-Pad12)">
+    <net code="41" name="unconnected-(J2-P16-Pad12)">
       <node ref="J2" pin="12" pinfunction="P16" pintype="passive+no_connect"/>
     </net>
-    <net code="38" name="unconnected-(J2-P17-Pad11)">
+    <net code="42" name="unconnected-(J2-P17-Pad11)">
       <node ref="J2" pin="11" pinfunction="P17" pintype="passive+no_connect"/>
     </net>
-    <net code="39" name="unconnected-(J2-P21-Pad6)">
-      <node ref="J2" pin="6" pinfunction="P21" pintype="passive+no_connect"/>
-    </net>
-    <net code="40" name="unconnected-(J2-P22-Pad3)">
+    <net code="43" name="unconnected-(J2-P22-Pad3)">
       <node ref="J2" pin="3" pinfunction="P22" pintype="passive+no_connect"/>
     </net>
-    <net code="41" name="unconnected-(J2-P23-Pad2)">
-      <node ref="J2" pin="2" pinfunction="P23" pintype="passive+no_connect"/>
-    </net>
-    <net code="42" name="unconnected-(J2-RX-Pad5)">
+    <net code="44" name="unconnected-(J2-RX-Pad5)">
       <node ref="J2" pin="5" pinfunction="RX" pintype="passive+no_connect"/>
     </net>
-    <net code="43" name="unconnected-(J2-SD0-Pad18)">
+    <net code="45" name="unconnected-(J2-SD0-Pad18)">
       <node ref="J2" pin="18" pinfunction="SD0" pintype="passive+no_connect"/>
     </net>
-    <net code="44" name="unconnected-(J2-SD1-Pad17)">
+    <net code="46" name="unconnected-(J2-SD1-Pad17)">
       <node ref="J2" pin="17" pinfunction="SD1" pintype="passive+no_connect"/>
     </net>
-    <net code="45" name="unconnected-(J2-TX-Pad4)">
+    <net code="47" name="unconnected-(J2-TX-Pad4)">
       <node ref="J2" pin="4" pinfunction="TX" pintype="passive+no_connect"/>
     </net>
-    <net code="46" name="unconnected-(U4-NC-Pad2)">
-      <node ref="U4" pin="2" pinfunction="NC" pintype="no_connect"/>
+    <net code="48" name="unconnected-(U4-MODE0{slash}GPIO0-Pad15)">
+      <node ref="U4" pin="15" pinfunction="MODE0/GPIO0" pintype="unspecified+no_connect"/>
     </net>
-    <net code="47" name="unconnected-(U4-NC-Pad5)">
-      <node ref="U4" pin="5" pinfunction="NC" pintype="no_connect"/>
+    <net code="49" name="unconnected-(U4-MODE1{slash}GPIO1-Pad16)">
+      <node ref="U4" pin="16" pinfunction="MODE1/GPIO1" pintype="unspecified+no_connect"/>
     </net>
-    <net code="48" name="unconnected-(U5-SCKB-Pad19)">
-      <node ref="U5" pin="19" pinfunction="SCKB" pintype="input+no_connect"/>
+    <net code="50" name="unconnected-(U4-MODE2{slash}GPIO2-Pad17)">
+      <node ref="U4" pin="17" pinfunction="MODE2/GPIO2" pintype="unspecified+no_connect"/>
     </net>
-    <net code="49" name="unconnected-(U5-SDOB-Pad20)">
-      <node ref="U5" pin="20" pinfunction="SDOB" pintype="tri_state+no_connect"/>
+    <net code="51" name="unconnected-(U4-MODE3{slash}GPIO3(START*)-Pad18)">
+      <node ref="U4" pin="18" pinfunction="MODE3/GPIO3(START*)" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(U4-SYNC_OUT*-Pad3)">
+      <node ref="U4" pin="3" pinfunction="SYNC_OUT*" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(U4-VCM-Pad28)">
+      <node ref="U4" pin="28" pinfunction="VCM" pintype="unspecified+no_connect"/>
     </net>
   </nets>
 </export>
