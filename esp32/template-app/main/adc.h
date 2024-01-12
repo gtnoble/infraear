@@ -1,0 +1,1 @@
+void start_adc_clock(void);

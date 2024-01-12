@@ -1,0 +1,26 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "files.associations": {
+    "*.rasi": "css",
+    "*.bbmodel": "json",
+    "*.sublime-snippet": "xml",
+    "*.hbs": "html",
+    "*.ejs": "html",
+    "*.emu": "html",
+    "lesskey": "lesskey",
+    "*.Xresources": "xdefaults",
+    "i3/config": "i3",
+    "i3/*.conf": "i3",
+    "polybar/config": "ini",
+    "polybar/*.conf": "ini",
+    "task.h": "c",
+    "freertos.h": "c",
+    "rtc.h": "c"
+  },
+  "idf.flashType": "UART",
+  "idf.port": "/dev/ttyUSB0",
+  "idf.adapterTargetName": "esp32",
+  "idf.openOcdConfigs": [
+    "board/esp32-bridge.cfg"
+  ]
+}
