@@ -3,6 +3,9 @@
 
 #include "esp_log.h"
 
+#include "freertos/FreeRTOS.h"
+#include "freertos/queue.h"
+
 #include "cli.h"
 #include "esp_system.h"
 #include "esp_console.h"
@@ -46,9 +49,19 @@ static const esp_console_cmd_t read_voltage_command_config = {
     .func = cli_voltage
 };
 
+int cli_read_adc(int argc, char *argv[]);
+static const esp_console_cmd_t read_adc_command_config = {
+    .command = "read_adc",
+    .help = "usage: read_adc <num_samples>",
+    .hint = NULL,
+    .argtable = NULL,
+    .func = cli_read_adc
+};
+
 static esp_console_repl_t *repl;
 
 static const char *TAG = "CLI";
+extern QueueHandle_t adc_samples;
 
 
 int start_cli(void) {
@@ -84,6 +97,16 @@ int start_cli(void) {
             TAG,
             "error: could not register %s command. details: %s",
             read_voltage_command_config.command,
+            esp_err_to_name(error)
+        );
+   }
+
+   error = esp_console_cmd_register(&read_adc_command_config);
+   if (error != ESP_OK) {
+        ESP_LOGE(
+            TAG,
+            "error: could not register %s command. details: %s",
+            read_adc_command_config.command,
             esp_err_to_name(error)
         );
    }
@@ -147,4 +170,20 @@ int cli_voltage(int argc, char *argv[]) {
     }
 
     return 1;
+}
+
+int cli_read_adc(int argc, char *argv[]) {
+    if (argc != 2) {
+        fprintf(stderr, "error: expecting 1 argument, %d passed instead", argc - 1);
+        return 1;
+    }
+
+    long num_samples = atol(argv[1]);
+
+    for (int i = 0; i < num_samples; i++) {
+        int sample;
+        xQueueReceive(adc_samples, &sample, portMAX_DELAY);
+        printf("%d\n", sample);
+    }
+    return 0;
 }

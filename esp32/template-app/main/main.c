@@ -8,10 +8,16 @@
 #include "cli.h"
 #include "adc.h"
 
+#define SAMPLE_QUEUE_LENGTH 100
+QueueHandle_t adc_samples;
+
 void app_main(void)
 {
     initialize_diagnostic_inputs();
-    start_adc_clock();
+
+    adc_samples = xQueueCreate(SAMPLE_QUEUE_LENGTH, sizeof(int));
+
+    initialize_adc(&adc_samples);
     start_cli();
 
 

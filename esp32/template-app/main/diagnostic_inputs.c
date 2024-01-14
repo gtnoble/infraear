@@ -59,7 +59,7 @@ static Adc adc_2 = {
     .description = "ADC2"
 }; 
 
-static const Adc *adcs[] = {
+static Adc *adcs[] = {
     &adc_1,
     &adc_2
 };
@@ -102,7 +102,7 @@ int initialize_diagnostic_inputs(void) {
 
     ESP_LOGD(TAG, "Initializing ADCs");
     for (int i = 0; i < sizeof(adcs) / sizeof(const Adc *); i++) {
-        const Adc *adc = adcs[i];
+        Adc *adc = adcs[i];
         ESP_LOGD(TAG, "Initializing ADC %s", adc->description);
 
         esp_err_t error;
