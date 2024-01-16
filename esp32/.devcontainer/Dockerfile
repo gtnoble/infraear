@@ -1,4 +1,4 @@
-FROM espressif/idf
+FROM docker.io/espressif/idf
 
 ARG DEBIAN_FRONTEND=nointeractive
 ARG CONTAINER_USER=esp
@@ -14,6 +14,7 @@ RUN apt-get update \
   libnuma1 \
   libpixman-1-0 \
   linux-tools-virtual \
+  python3-cryptography \
   && rm -rf /var/lib/apt/lists/*
 
 RUN update-alternatives --install /usr/local/bin/usbip usbip `ls /usr/lib/linux-tools/*/usbip | tail -n1` 20

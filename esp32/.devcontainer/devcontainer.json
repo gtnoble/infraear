@@ -6,7 +6,7 @@
 		"dockerfile": "Dockerfile"
 	},
 	// Add the IDs of extensions you want installed when the container is created
-	"workspaceMount": "source=${localWorkspaceFolder},target=${localWorkspaceFolder},type=bind",
+	"workspaceMount": "source=${localWorkspaceFolder},target=${localWorkspaceFolder},type=bind,Z",
 	/* the path of workspace folder to be opened after container is running
 	 */
 	"workspaceFolder": "${localWorkspaceFolder}",
@@ -19,8 +19,8 @@
 				"terminal.integrated.defaultProfile.linux": "bash",
 				"idf.espIdfPath": "/opt/esp/idf",
 				"idf.customExtraPaths": "",
-				"idf.pythonBinPath": "/opt/esp/python_env/idf5.1_py3.8_env/bin/python",
-				"idf.toolsPath": "/opt/esp",
+				"idf.pythonBinPath": "/opt/esp/python_env/idf5.3_py3.10_env/bin/python",
+				"idf.toolsPath": "/opt/esp/tools",
 				"idf.gitPath": "/usr/bin/git"
 			},
 			"extensions": [
@@ -34,7 +34,7 @@
 				"idf.espIdfPath": "/opt/esp/idf",
 				"idf.customExtraPaths": "",
 				"idf.pythonBinPath": "/opt/esp/python_env/idf5.1_py3.8_env/bin/python",
-				"idf.toolsPath": "/opt/esp",
+				"idf.toolsPath": "/opt/esp/tools",
 				"idf.gitPath": "/usr/bin/git"
 			},
 			"extensions": [
@@ -43,5 +43,5 @@
 			],
 		}
 	},
-	"runArgs": ["--privileged"]
+	"runArgs": ["--privileged", "--log-driver=none", "--userns=keep-id"]
 }

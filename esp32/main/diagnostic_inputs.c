@@ -9,7 +9,7 @@
 
 #include "diagnostic_inputs.h"
 
-#define ADC_CHANNEL_ATTENUATION ADC_ATTEN_DB_11
+#define ADC_CHANNEL_ATTENUATION ADC_ATTEN_DB_12
 
 
 typedef struct {

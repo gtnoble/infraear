@@ -8,6 +8,7 @@
 #include "esp_log.h"
 #include "wifi.h"
 
+
 static const char* TAG = "wifi";
 
 wifi_config_t station_config;
@@ -44,6 +45,7 @@ void initialize_wifi(const char ssid[], const char password[], SemaphoreHandle_t
     ESP_ERROR_CHECK(esp_wifi_start());
 
 }
+
 
 static void on_station_start(void *context, esp_event_base_t event_base, int32_t event_id, void *event_data) {
     ESP_LOGI(TAG, "Wifi station started!");

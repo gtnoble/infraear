@@ -29,7 +29,7 @@ void app_main(void)
     initialize_adc(&adc_samples);
 
     wifi_is_connected = xSemaphoreCreateBinary();
-    initialize_wifi("Greyhound_2G", "***REMOVED***", &wifi_is_connected);
+    initialize_wifi("ssid", "password", &wifi_is_connected);
 
     start_cli();
 
