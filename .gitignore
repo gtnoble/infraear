@@ -6,3 +6,4 @@ pcb/ultrasonic_microphone-backups
 *.zip
 *.lck
 *.o
+.vscode/settings.json
