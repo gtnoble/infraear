@@ -129,6 +129,12 @@ void initialize_iomux_pin(IoMuxPinConfig pin_config);
 void data_ready_isr(void *adc_samples);
 int start_collecting_samples(QueueHandle_t *adc_samples);
 
+/**
+ * @brief
+ * Initialize the external ADC and begin collecting samples. Sample data is stored in a queue.
+ * @param adc_samples Queue of `int` to store samples in. 
+ * @return 0 if success
+ */
 int initialize_adc(QueueHandle_t *adc_samples) {
     start_adc_clock();
     if (initialize_spi_bus(adc_device_config.bus_config)) {
@@ -154,6 +160,10 @@ int initialize_adc(QueueHandle_t *adc_samples) {
     return 0;
 }
 
+/**
+ * @brief 
+ * Start the APLL ESP32 clock
+ */
 void start_adc_clock(void) {
     ESP_LOGD(TAG, "Initializing ADC Clock Pin");
     gpio_iomux_out(ADC_CLOCK_PIN, FUNC_GPIO0_CLK_OUT1, false);
@@ -191,7 +201,12 @@ void start_adc_clock(void) {
     rtc_clk_apll_coeff_set(odiv, sdm0, sdm1, sdm2);
 }
 
-
+/**
+ * @brief 
+ * Initialize the SPI bus that connects to a device
+ * @param bus_config 
+ * @return 0 if success 
+ */
 int initialize_spi_bus(const SpiBusConfig *bus_config) {
     ESP_LOGD(TAG, "Initializing SCLK Pin");
     initialize_iomux_pin(bus_config->sclk_pin);
@@ -208,6 +223,13 @@ int initialize_spi_bus(const SpiBusConfig *bus_config) {
     return 0;
 }
 
+/**
+ * @brief 
+ * Initialize an SPI device and add to the bus
+ * @param device_config 
+ * @param device 
+ * @return 0 if success 
+ */
 int initialize_device_spi(SpiDeviceConfig device_config, spi_device_handle_t *device) {
     ESP_LOGD(TAG, "Initializing Chip Select Pin");
     esp_err_t error = gpio_set_direction(device_config.interface_configuration.spics_io_num, GPIO_MODE_OUTPUT);
