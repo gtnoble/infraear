@@ -15,13 +15,14 @@ wifi_config_t station_config;
 esp_netif_t *esp_netif;
 
 esp_event_loop_handle_t event_loop;
+extern bool wifi_is_connected;
 
 static void on_station_start(void *context, esp_event_base_t event_base, int32_t event_id, void *event_data);
 static void on_wifi_connected(void *context, esp_event_base_t event_base, int32_t event_id, void *event_data);
 static void on_wifi_disconnected(void *context, esp_event_base_t event_base, int32_t event_id, void *event_data);
 static void on_got_ip(void *wifi_connected_semaphore, esp_event_base_t event_base, int32_t event_id, void *event_data);
 
-void initialize_wifi(const char ssid[], const char password[], SemaphoreHandle_t *wifi_connected) {
+void initialize_wifi(const char ssid[], const char password[]) {
     assert(strlen(ssid) <= 32);
     assert(strlen(password) <= 64);
 
@@ -41,7 +42,7 @@ void initialize_wifi(const char ssid[], const char password[], SemaphoreHandle_t
     ESP_ERROR_CHECK(esp_event_handler_register(WIFI_EVENT, WIFI_EVENT_STA_START, on_station_start, NULL));
     ESP_ERROR_CHECK(esp_event_handler_register(WIFI_EVENT, WIFI_EVENT_STA_CONNECTED, on_wifi_connected, NULL));
     ESP_ERROR_CHECK(esp_event_handler_register(WIFI_EVENT, WIFI_EVENT_STA_DISCONNECTED, on_wifi_disconnected, NULL));
-    ESP_ERROR_CHECK(esp_event_handler_register(WIFI_EVENT, IP_EVENT_STA_GOT_IP, on_got_ip, wifi_connected));
+    ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_STA_GOT_IP, on_got_ip, NULL));
     ESP_ERROR_CHECK(esp_wifi_start());
 
 }
@@ -57,10 +58,11 @@ static void on_wifi_connected(void *context, esp_event_base_t event_base, int32_
 }
 
 static void on_wifi_disconnected(void *context, esp_event_base_t event_base, int32_t event_id, void *event_data) {
-    ESP_LOGI(TAG, "Wifi disconnected!");
+    ESP_LOGI(TAG, "Wifi disconnected! Attempting to reconnect...");
+    ESP_ERROR_CHECK(esp_wifi_connect());
 }
 
-static void on_got_ip(void *wifi_connected_semaphore, esp_event_base_t event_base, int32_t event_id, void *event_data) {
+static void on_got_ip(void *context, esp_event_base_t event_base, int32_t event_id, void *event_data) {
     ESP_LOGI(TAG, "Receieved an IP Address.");
-    xSemaphoreGive(*(SemaphoreHandle_t *) wifi_connected_semaphore);
+    wifi_is_connected = true;
 }

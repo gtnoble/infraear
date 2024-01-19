@@ -25,6 +25,7 @@
 			},
 			"extensions": [
 				"ms-vscode.cpptools",
+				"ms-vscode.cpptools-extension-pack",
 				"espressif.esp-idf-extension"
 			],
 		},
@@ -43,5 +44,10 @@
 			],
 		}
 	},
-	"runArgs": ["--privileged", "--log-driver=none", "--userns=keep-id"]
+	"runArgs": [
+		"--log-driver=none", 
+		"--userns=keep-id", 
+		"--device=/dev/ttyUSB0",
+		"--group-add=keep-groups"
+	]
 }

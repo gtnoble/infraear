@@ -15,8 +15,7 @@
 
 #define SAMPLE_QUEUE_LENGTH 100
 QueueHandle_t adc_samples;
-
-SemaphoreHandle_t wifi_is_connected;
+bool wifi_is_connected;
 
 
 void app_main(void)
@@ -27,9 +26,6 @@ void app_main(void)
 
     adc_samples = xQueueCreate(SAMPLE_QUEUE_LENGTH, sizeof(int));
     initialize_adc(&adc_samples);
-
-    wifi_is_connected = xSemaphoreCreateBinary();
-    initialize_wifi("ssid", "password", &wifi_is_connected);
 
     start_cli();
 

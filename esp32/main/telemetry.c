@@ -5,12 +5,14 @@
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/queue.h"
+#include "freertos/semphr.h"
 
 #include "esp_log.h"
 
 static const char* TAG = "telemetry";
+extern bool wifi_is_connected;
 
-#define TELEMETRY_MESSAGE_LENGTH 100
+#define TELEMETRY_MAX_MESSAGE_LENGTH 100
 
 int start_telemetry(char hostname[], char service[], QueueHandle_t adc_samples, int num_readings) {
     struct addrinfo hints = {
@@ -18,6 +20,11 @@ int start_telemetry(char hostname[], char service[], QueueHandle_t adc_samples, 
         .ai_socktype = SOCK_DGRAM,
         .ai_flags = AI_PASSIVE
     };
+
+    if (! wifi_is_connected) {
+        fprintf(stderr, "error: Wifi is not connected. Aborting.\n");
+        return 1;
+    }
 
     struct addrinfo *servinfo;
 
@@ -44,14 +51,16 @@ int start_telemetry(char hostname[], char service[], QueueHandle_t adc_samples, 
     for (int i = 0; i < num_readings; i++) {
         int sample;
         xQueueReceive(adc_samples, &sample, portMAX_DELAY);
-        char reading_data[TELEMETRY_MESSAGE_LENGTH];
-        snprintf(reading_data, TELEMETRY_MESSAGE_LENGTH, "adcReading:%d|t", sample);
+        char reading_data[TELEMETRY_MAX_MESSAGE_LENGTH];
+        int message_length = snprintf(reading_data, TELEMETRY_MAX_MESSAGE_LENGTH, "adcReading:%d", sample);
+
+        assert(message_length <= TELEMETRY_MAX_MESSAGE_LENGTH);
 
         ESP_LOGD(TAG, "Sending telemetry reading packet: \"%s\"", reading_data);
         int bytes_sent = sendto(
             telemetry_sd, 
             reading_data, 
-            TELEMETRY_MESSAGE_LENGTH, 
+            message_length, 
             0, 
             servinfo->ai_addr,
             sizeof(struct sockaddr_storage)
@@ -59,10 +68,9 @@ int start_telemetry(char hostname[], char service[], QueueHandle_t adc_samples, 
         if (bytes_sent == -1) {
             ESP_LOGE(TAG, "Failed to send a telemetry reading packet!");
         }
-
-
     }
 
+    close(telemetry_sd);
     freeaddrinfo(servinfo);
 
     return 0;

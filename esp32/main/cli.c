@@ -6,12 +6,14 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/queue.h"
 
-#include "cli.h"
 #include "esp_system.h"
 #include "esp_console.h"
 
+#include "cli.h"
 #include "vga.h"
 #include "diagnostic_inputs.h"
+#include "wifi.h"
+#include "telemetry.h"
 
 static const esp_console_repl_config_t repl_config = {
     .max_history_len = 20,
@@ -58,68 +60,41 @@ static const esp_console_cmd_t read_adc_command_config = {
     .func = cli_read_adc
 };
 
+int cli_connect_wifi(int argc, char *argv[]);
+static const esp_console_cmd_t start_wifi_command_config = {
+    .command = "start_wifi",
+    .help = "Usage: start_wifi <ssid> <password>",
+    .hint = NULL,
+    .argtable = NULL,
+    .func = cli_connect_wifi
+};
+
+int cli_transmit_telemetry(int argc, char *argv[]);
+static const esp_console_cmd_t start_telemetry_command_config = {
+    .command = "transmit_telemetry",
+    .help = "Usage: transmit_telemetry <hostname> <service> <num_samples>",
+    .hint = NULL,
+    .argtable = NULL,
+    .func = cli_transmit_telemetry
+};
+
 static esp_console_repl_t *repl;
 
-static const char *TAG = "CLI";
 extern QueueHandle_t adc_samples;
 
 
 int start_cli(void) {
-    esp_err_t error;
     esp_console_dev_uart_config_t hw_config = 
         ESP_CONSOLE_DEV_UART_CONFIG_DEFAULT();
-    error = esp_console_new_repl_uart(
-        &hw_config, &repl_config, &repl
-    );
-    if (error != ESP_OK) {
-        ESP_LOGE(
-            TAG, 
-            "error: could not initialize the repl. details: %s", 
-            esp_err_to_name(error)
-        );
-        return 1;
-    }
+    ESP_ERROR_CHECK(esp_console_new_repl_uart(&hw_config, &repl_config, &repl));
 
-    error = esp_console_cmd_register(&set_gain_command_config);
-    if (error != ESP_OK) {
-        ESP_LOGE(
-            TAG,
-            "error: could not register %s command. details: %s",
-            set_gain_command_config.command,
-            esp_err_to_name(error)
-        );
-        return 1;
-    }
+    ESP_ERROR_CHECK(esp_console_cmd_register(&set_gain_command_config));
+    ESP_ERROR_CHECK(esp_console_cmd_register(&read_voltage_command_config));
+    ESP_ERROR_CHECK(esp_console_cmd_register(&read_adc_command_config));
+    ESP_ERROR_CHECK(esp_console_cmd_register(&start_wifi_command_config));
+    ESP_ERROR_CHECK(esp_console_cmd_register(&start_telemetry_command_config));
 
-   error = esp_console_cmd_register(&read_voltage_command_config);
-   if (error != ESP_OK) {
-        ESP_LOGE(
-            TAG,
-            "error: could not register %s command. details: %s",
-            read_voltage_command_config.command,
-            esp_err_to_name(error)
-        );
-   }
-
-   error = esp_console_cmd_register(&read_adc_command_config);
-   if (error != ESP_OK) {
-        ESP_LOGE(
-            TAG,
-            "error: could not register %s command. details: %s",
-            read_adc_command_config.command,
-            esp_err_to_name(error)
-        );
-   }
-
-    error = esp_console_start_repl(repl);
-    if (error != ESP_OK) {
-        ESP_LOGE(
-            TAG,
-            "error: could not start repl. details: %s",
-            esp_err_to_name(error)
-        );
-        return 1;
-    }
+    ESP_ERROR_CHECK(esp_console_start_repl(repl));
 
     return 0;
 
@@ -127,14 +102,14 @@ int start_cli(void) {
 
 int cli_set_vga_gain(int argc, char *argv[]) {
     if (argc != 2) {
-        fprintf(stderr, "error: expecting 1 argument, %d passed instead", argc - 1);
+        fprintf(stderr, "error: expecting 1 argument, %d passed instead\n", argc - 1);
         return 1;
     }
 
     long gain = atol(argv[1]);
 
     if (gain < 0 || gain > 64 || (gain & (gain - 1)) != 0) {
-        fprintf(stderr, "error: gain %ld is not zero or a power of two less than or equal to 64", gain);
+        fprintf(stderr, "error: gain %ld is not zero or a power of two less than or equal to 64\n", gain);
         return 1;
     }
 
@@ -143,7 +118,7 @@ int cli_set_vga_gain(int argc, char *argv[]) {
 
 int cli_voltage(int argc, char *argv[]) {
     if (argc != 2) {
-        fprintf(stderr, "error: expecting 1 argument, %d passed instead", argc - 1);
+        fprintf(stderr, "error: expecting 1 argument, %d passed instead\n", argc - 1);
         return 1;
     }
 
@@ -174,7 +149,7 @@ int cli_voltage(int argc, char *argv[]) {
 
 int cli_read_adc(int argc, char *argv[]) {
     if (argc != 2) {
-        fprintf(stderr, "error: expecting 1 argument, %d passed instead", argc - 1);
+        fprintf(stderr, "error: expecting 1 argument, %d passed instead\n", argc - 1);
         return 1;
     }
 
@@ -186,4 +161,30 @@ int cli_read_adc(int argc, char *argv[]) {
         printf("%d\n", sample);
     }
     return 0;
+}
+
+int cli_connect_wifi(int argc, char *argv[]) {
+    if (argc != 3) {
+        fprintf(stderr, "error: expecting 2 argument, %d passed instead\n", argc - 1);
+        return 1;
+    }
+
+    char *ssid = argv[1];
+    char *password = argv[2];
+
+    initialize_wifi(ssid, password);
+    return 0;
+}
+
+int cli_transmit_telemetry(int argc, char *argv[]) {
+    if (argc != 4) {
+        fprintf(stderr, "error: expecting 3 argument, %d passed instead\n", argc - 1);
+        return 1;
+    }
+
+    char *hostname = argv[1];
+    char *service = argv[2];
+    int num_samples = (int) atol(argv[3]);
+
+    return start_telemetry(hostname, service, adc_samples, num_samples);
 }

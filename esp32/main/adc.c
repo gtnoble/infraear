@@ -1,3 +1,4 @@
+#include <assert.h>
 #include "esp_log.h"
 
 #include "freertos/FreeRTOS.h"
@@ -22,6 +23,7 @@
 #define ADC_CLOCK_PIN GPIO_NUM_0
 
 #define IDEAL_ADC_CLOCK_FREQ 16.384E6
+#define SPI_CLOCK_SPEED 20000000
 #define DATA_READY_PIN GPIO_NUM_34
 
 typedef struct {
@@ -71,7 +73,7 @@ const SpiDeviceConfig adc_device_config = {
         .address_bits = 6,
         .dummy_bits = 0,
         .mode = 3,
-        .clock_speed_hz = 20000000,
+        .clock_speed_hz = SPI_CLOCK_SPEED,
         .spics_io_num = GPIO_NUM_5,
         .queue_size = 5
     }
@@ -110,12 +112,23 @@ spi_transaction_t set_digital_filter_transaction = {
     .tx_data = {digital_filter_type | digital_filter_decimation_rate, 0, 0, 0}
 };
 
+const uint64_t offset_calibration_register = 0x21;
+const int8_t calibration_offset = 0;
+spi_transaction_t set_calibration_transaction = {
+    .flags = SPI_TRANS_USE_TXDATA,
+    .cmd = write_command,
+    .addr = offset_calibration_register,
+    .length = 8,
+    .rxlength = 8,
+    .tx_data = {calibration_offset, 0, 0, 0}
+};
+
 const uint64_t conversion_result_register = 0x2c;
 spi_transaction_t read_adc_transaction = {
     .flags = SPI_TRANS_USE_RXDATA,
     .cmd = read_command,
     .addr = conversion_result_register,
-    .length = 24,
+    .length = 32,
 };
 
 static const char *TAG = "ADC";
@@ -149,6 +162,8 @@ int initialize_adc(QueueHandle_t *adc_samples) {
         ESP_LOGE(TAG, "Failed to set ADC digital filter params. details: %s", esp_err_to_name(error));
         return 1;
     }
+
+    ESP_ERROR_CHECK(spi_device_polling_transmit(adc_device, &set_calibration_transaction));
 
     error = gpio_install_isr_service(ESP_INTR_FLAG_LOWMED);
     if (error != ESP_OK) {
@@ -290,12 +305,17 @@ void data_ready_isr(void *adc_samples) {
     spi_device_polling_transmit(adc_device, &read_adc_transaction);
     uint8_t *adc_bytes = read_adc_transaction.rx_data;
 
-    int sample =
-        ((int) 
-        (((uint32_t) adc_bytes[0]) +
-        (((uint32_t) adc_bytes[1]) << 8) +
-        (((uint32_t) adc_bytes[2]) << 16))) - 
-        (1 << 23);
+    // Need to reverse byte order in sample data because it is big-endian.
+    int32_t sample = 
+        (
+            ((int32_t) adc_bytes[0] << 24) |
+            ((int32_t) adc_bytes[1] << 16) |
+            ((int32_t) adc_bytes[2] << 8)
+        ) >> 8;
 
-    xQueueSendToBackFromISR(*((QueueHandle_t *) adc_samples), &sample, NULL);
+    int int_sample = (int) sample;
+
+    assert(adc_bytes[3] == 0x0); // Error status bits should be zero
+
+    xQueueSendToBackFromISR(*((QueueHandle_t *) adc_samples), &int_sample, NULL);
 }
